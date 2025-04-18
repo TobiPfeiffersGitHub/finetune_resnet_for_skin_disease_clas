@@ -1,2 +1,3 @@
 .sdc
 resnet50.pth
+__pycache__

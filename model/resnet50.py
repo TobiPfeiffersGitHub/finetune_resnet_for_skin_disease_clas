@@ -4,11 +4,12 @@ import torch.nn.functional as F
 from torchvision import models
 import matplotlib.pyplot as plt
 import numpy as np
+from torchvision.models import resnet50, ResNet50_Weights
 
 class ResNet50Classifier(nn.Module):
     def __init__(self, num_classes):
         super().__init__()
-        self.model = models.resnet50(pretrained=True)
+        self.model = models.resnet50(weights=ResNet50_Weights.DEFAULT)
         for param in self.model.parameters():
             param.requires_grad = False
 
