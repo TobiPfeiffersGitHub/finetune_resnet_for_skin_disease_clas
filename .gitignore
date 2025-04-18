@@ -1,3 +1,4 @@
 .sdc
 resnet50.pth
 __pycache__
+resnet50_best.pth
