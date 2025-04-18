@@ -1,0 +1,14 @@
+batch_size: 64
+input_size: 256
+val_split: 0.2
+learning_rate: 0.0005
+num_epochs: 10
+excluded_classes:
+  - Vasculitis
+  - Lupus
+  - Vascular_Tumors
+  - Bullous
+  - DrugEruption
+  - Infestations_Bites
+  - Tinea
+model_path: resnet50_best.pth
